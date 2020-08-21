@@ -1,0 +1,23 @@
+<div class="logo">
+  <img class="logo-image" src="https://as1.ftcdn.net/jpg/00/98/50/70/500_F_98507074_mJJWMe4O4crtEqmM23rU6BjLYLhxq7NS.jpg">
+  <p class="logo-header">Ready Set Go</p>
+</div>
+<div class="navbar">
+  <button class="navbar-button" (click)="landingpage()"> Home</button>
+  <button class="navbar-button" (click)="placeAppointment()"> Place Appointment</button>
+  <button class="navbar-button" (click)="viewAppointment()"> View Appointment</button>
+  <button class="navbar-button" (click)="contactUspage()"> Contact Us</button>
+
+</div>
+
+<div class="section-page">
+  <div class="sidebar">
+    <button class="sidebar-button" (click)="landingpage()">Home</button><br>
+    <button class="sidebar-button" (click)="placeAppointment()">Place Appointment</button><br>
+    <button class="sidebar-button" (click)="viewAppointment()">View Appointment</button><br>
+    <button class="sidebar-button" (click)="contactUspage()">Contact Us</button>
+  </div>
+  <div class="content-page">
+    <router-outlet></router-outlet>
+  </div>
+</div>
